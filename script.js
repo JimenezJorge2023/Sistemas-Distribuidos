@@ -5,7 +5,7 @@ const taskList = document.getElementById('taskList');
 addTaskButton.addEventListener('click', async () => {
     const task = taskInput.value.trim();
     if (task === "") {
-        alert("Task cannot be empty!");
+        alert("Tarea no puede estar vacía!");
         return;
     }
 
@@ -22,6 +22,6 @@ addTaskButton.addEventListener('click', async () => {
         taskList.appendChild(li);
         taskInput.value = "";
     } else {
-        alert(data.error || "Something went wrong!");
+        alert(data.error || "Algo Salió Mal!");
     }
 });
