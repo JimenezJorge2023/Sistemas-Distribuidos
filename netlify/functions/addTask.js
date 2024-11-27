@@ -6,7 +6,7 @@ exports.handler = async (event) => {
         if (!task) {
             return {
                 statusCode: 400,
-                body: JSON.stringify({ error: "Task is required" }),
+                body: JSON.stringify({ error: "Tarea es Requerida" }),
             };
         }
 
